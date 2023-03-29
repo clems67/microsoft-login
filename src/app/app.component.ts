@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MsalService } from '@azure/msal-angular/msal.service';
+import { MsalService } from '@azure/msal-angular';
 import { AuthenticationResult } from '@azure/msal-browser';
 
 @Component({
@@ -26,5 +26,9 @@ export class AppComponent {
 
   logout() {
     this.msalService.logout();
+  }
+
+  getActiveAccount() {
+    console.log(this.msalService.instance.getActiveAccount());
   }
 }

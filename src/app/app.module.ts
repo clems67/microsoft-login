@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MsalModule } from '@azure/msal-angular';
-import { MSAL_INSTANCE } from '@azure/msal-angular/constants';
-import { MsalService } from '@azure/msal-angular/msal.service';
+import { MsalModule, MsalService, MSAL_INSTANCE } from '@azure/msal-angular';
 import { PublicClientApplication } from '@azure/msal-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

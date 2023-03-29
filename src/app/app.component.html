@@ -1,1 +1,14 @@
+<table>
+  <tr>
+    <td>
+      <button (click)="login()" *ngIf="!isLoggedIn()">SIGN IN</button>
+    </td>
+    <td>
+      <button (click)="logout()" *ngIf="isLoggedIn()">SIGN OUT</button>
+    </td>
+  </tr>
+</table>
+<div *ngIf="isLoggedIn()"><h3>You are logged in</h3></div>
+<div *ngIf="!isLoggedIn()"><h3>You are NOT logged in</h3></div>
+<button (click)="getActiveAccount()">get account</button>
 <router-outlet></router-outlet>
