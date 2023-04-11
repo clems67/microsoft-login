@@ -4,7 +4,7 @@
       <a routerLink="public-page">[PUBLIC-PAGE]</a>
     </td>
     <td>
-      <a routerLink="restricted-page">[RESTRICTED-PAGE]</a>
+      <a routerLink="restricted-page" *ngIf="isLoggedIn()">[RESTRICTED-PAGE]</a>
     </td>
     <td>
       <button (click)="login()" *ngIf="!isLoggedIn()">SIGN IN</button>
